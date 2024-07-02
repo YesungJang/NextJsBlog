@@ -1,5 +1,8 @@
 import Head from "next/head";
 
+import { basePath } from "../../next.config"; // 追加
+const BASE_PATH = basePath ? basePath : ""; // 追加
+
 export default function Home() {
   return (
     <div className="container">
